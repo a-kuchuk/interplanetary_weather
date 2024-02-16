@@ -1,6 +1,6 @@
 /* Space-themed styling */
 body {
-    background-color: #0c0c1f; /* Dark blue background */
+    background-color: #020816; /* Dark blue background */
     color: #ffffff; /* White text */
     font-family: 'Arial', sans-serif;
 }
@@ -35,6 +35,50 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* Default styling for rhs box */
+.default-style {
+    background-color: #1f1f2f; /* Darker background color */
+    border: 1px solid #ffffff; /* White border */
+}
+
+.mercury-style {
+    background-color: #2f0c0c;
+}
+
+.venus-style {
+    background-color: #2a2f0c; 
+}
+
+.earth-style {
+    background-color: #0d2f0c; 
+}
+
+.mars-style {
+    background-color: #0c2a2f; 
+}
+
+.jupiter-style {
+    background-color: #0c0f2f; 
+}
+
+.saturn-style {
+    background-color: #270c2f; 
+}
+
+.uranus-style {
+    background-color: #2f0c2d; 
+}
+
+.neptune-style {
+    background-color: #2f0c18; 
+}
+
+.moon-style {
+    background-color: #2f0c0c; 
+}
+
+/* Add more planet-specific styles as needed */
 
 h5 {
     font-size: 18px;
