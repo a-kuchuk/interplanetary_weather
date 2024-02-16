@@ -46,9 +46,11 @@ const planetData = {
     },
     // Add more planets and moons as needed
 };
+
 const celestialBodySelect = document.getElementById('celestialBody');
 const temperatureElement = document.getElementById('temperature');
 const atmosphereElement = document.getElementById('atmosphere');
+const planetNameElement = document.getElementById('planetName');
 
 celestialBodySelect.addEventListener('change', () => {
     const selectedBody = celestialBodySelect.value;
@@ -63,4 +65,5 @@ celestialBodySelect.addEventListener('change', () => {
     // Update weather information
     temperatureElement.textContent = `Average Temperature: ${averageTemperature}°C`;
     atmosphereElement.textContent = `Atmosphere: ${atmosphere}`;
+    planetNameElement.textContent = `Planet: ${name}`;
 });

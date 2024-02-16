@@ -7,7 +7,9 @@ body {
 
 .flex-container {
     /* max-width: 400px; */
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white container */
@@ -15,11 +17,27 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.lhs {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #222f35;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-h1 {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
+.rhs {
+    flex: 1;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white container */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+    font-size: 18px;
 }
 
 select {
@@ -30,10 +48,7 @@ select {
     border: none;
     border-radius: 5px;
     outline: none;
-}
-
-#weatherInfo {
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -41,7 +56,6 @@ p {
     margin: 10px 0;
 }
 
-/* Additional styling for specific elements (customize as needed) */
 #temperature {
     font-weight: bold;
     font-size: 24px;
@@ -50,6 +64,3 @@ p {
 #atmosphere {
     font-style: italic;
 }
-
-
-
