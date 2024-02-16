@@ -89,4 +89,5 @@ celestialBodySelect.addEventListener('change', () => {
     // Apply planet-specific styling to rhs box
     rhsBox.className = 'rhs default-style'; // Reset class name to remove previous planet-specific styles and apply the default style
     rhsBox.classList.add(`${selectedBody}-style`); // Add class for the selected planet-specific style
+    
 });

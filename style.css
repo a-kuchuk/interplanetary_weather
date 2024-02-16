@@ -43,42 +43,60 @@ body {
 }
 
 .mercury-style {
-    background-color: #2f0c0c;
+/*     background-color: #2f0c0c; */
+    background-color: #222f35c9;
+    border: solid #7c3023;
+    color: #fdb620;
 }
 
 .venus-style {
-    background-color: #2a2f0c; 
+/*     background-color: #2f0c0c; */
+    background-color: #222f35c9;
+    border: solid #7f6157;
+    color: #ac958d;
 }
 
 .earth-style {
-    background-color: #0d2f0c; 
+    background-color: #222f35c9;
+    border: solid #1c84a1;
+    color: #b1e15a;
 }
 
 .mars-style {
-    background-color: #0c2a2f; 
+    background-color: #222f35c9;
+    border: solid #8a563e;
+    color: #fc4b22;
 }
 
 .jupiter-style {
-    background-color: #0c0f2f; 
+    background-color: #222f35c9;
+    border: solid #d9964f;
+    color: #bdddf4;
 }
 
 .saturn-style {
-    background-color: #270c2f; 
+    background-color: #222f35c9;
+    border: solid #ddba7a;
+    color: #c5c1a4;
 }
 
 .uranus-style {
-    background-color: #2f0c2d; 
+    background-color: #222f35c9;
+    border: solid #319a95;
+    color: #5fd4dd;
 }
 
 .neptune-style {
-    background-color: #2f0c18; 
+    background-color: #222f35c9;
+    border: solid #025da3;
+    color: #30e2fe;
 }
 
 .moon-style {
-    background-color: #2f0c0c; 
+    background-color: #222f35c9;
+    border: solid #d8d8d8;
+    color: #ffffff;
 }
-
-/* Add more planet-specific styles as needed */
 
 h5 {
     font-size: 18px;
