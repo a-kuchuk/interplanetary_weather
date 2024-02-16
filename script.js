@@ -61,6 +61,7 @@ const temperatureElement = document.getElementById('temperature');
 const atmosphereElement = document.getElementById('atmosphere');
 const planetNameElement = document.getElementById('planetName');
 const planetImageContainer = document.getElementById('planetImageContainer');
+const rhsBox = document.querySelector('.rhs');
 
 celestialBodySelect.addEventListener('change', () => {
     const selectedBody = celestialBodySelect.value;
@@ -84,5 +85,8 @@ celestialBodySelect.addEventListener('change', () => {
     planetImage.alt = `${name} Image`;
     planetImageContainer.innerHTML = ''; // Clear previous image (if any)
     planetImageContainer.appendChild(planetImage);
-});
 
+    // Apply planet-specific styling to rhs box
+    rhsBox.className = 'rhs default-style'; // Reset class name to remove previous planet-specific styles and apply the default style
+    rhsBox.classList.add(`${selectedBody}-style`); // Add class for the selected planet-specific style
+});
