@@ -61,7 +61,7 @@ const temperatureElement = document.getElementById('temperature');
 const atmosphereElement = document.getElementById('atmosphere');
 const planetNameElement = document.getElementById('planetName');
 const planetImageContainer = document.getElementById('planetImageContainer');
-const rhsBox = document.querySelector('.rhs');
+const mainFlexContainer = document.getElementById('mainFlexContainer');
 
 celestialBodySelect.addEventListener('change', () => {
     const selectedBody = celestialBodySelect.value;
@@ -86,8 +86,12 @@ celestialBodySelect.addEventListener('change', () => {
     planetImageContainer.innerHTML = ''; // Clear previous image (if any)
     planetImageContainer.appendChild(planetImage);
 
-    // Apply planet-specific styling to rhs box
-    rhsBox.className = 'rhs default-style'; // Reset class name to remove previous planet-specific styles and apply the default style
-    rhsBox.classList.add(`${selectedBody}-style`); // Add class for the selected planet-specific style
-    
+    // Remove all existing planet-specific styles
+    mainFlexContainer.classList.remove(
+        'mercury-style', 'venus-style', 'earth-style', 'mars-style', 
+        'jupiter-style', 'saturn-style', 'uranus-style', 'neptune-style', 'moon-style'
+    );
+
+    // Add class for the selected planet-specific style
+    mainFlexContainer.classList.add(`${selectedBody}-style`);
 });
