@@ -2,17 +2,47 @@ const planetData = {
     earth: {
         name: 'Earth',
         averageTemperature: 15,
-        atmosphere: 'Nitrogen, Oxygen',
+        atmosphere: 'Mainly nitrogen and oxygen, with traces of other gases',
     },
     mars: {
         name: 'Mars',
         averageTemperature: -50,
-        atmosphere: 'Carbon Dioxide',
+        atmosphere: 'Thin atmosphere, mostly carbon dioxide',
     },
     moon: {
         name: 'Moon',
         averageTemperature: -20,
-        atmosphere: 'None (vacuum)',
+        atmosphere: 'Virtually no atmosphere, some trace gases such as helium and argon',
+    },
+    mercury: {
+        name: 'Mercury',
+        averageTemperature: 167,
+        atmosphere: 'Thin atmosphere, mostly helium and hydrogen',
+    },
+    venus: {
+        name: 'Venus',
+        averageTemperature: 462,
+        atmosphere: 'Thick atmosphere, primarily carbon dioxide',
+    },
+    jupiter: {
+        name: 'Jupiter',
+        averageTemperature: -145,
+        atmosphere: 'Primarily hydrogen and helium, with trace amounts of other gases',
+    },
+    saturn: {
+        name: 'Saturn',
+        averageTemperature: -178,
+        atmosphere: 'Mainly hydrogen and helium, with trace amounts of other gases',
+    },
+    uranus: {
+        name: 'Uranus',
+        averageTemperature: -216,
+        atmosphere: 'Primarily hydrogen and helium, with some methane',
+    },
+    neptune: {
+        name: 'Neptune',
+        averageTemperature: -201,
+        atmosphere: 'Mainly hydrogen and helium, with some methane and trace amounts of other gases',
     },
     // Add more planets and moons as needed
 };

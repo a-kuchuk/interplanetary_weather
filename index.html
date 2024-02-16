@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Celestial Weather</h1>
-        <select id="celestialBody">
-            <option value="earth">Earth</option>
-            <option value="mars">Mars</option>
-            <option value="mars">Moon</option>
-            <!-- Add more options for other planets and moons -->
-        </select>
-        <div id="weatherInfo">
-            <p id="temperature"></p>
-            <p id="atmosphere"></p>
-            <!-- Add more weather parameters as needed -->
+    <div class="flex-container">
+        <div class="lhs">
+            <h5>Choose your location</h1>
+            <select id="celestialBody">
+                <option value="mercury">Mercury</option>
+                <option value="venus">Venus</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="saturn">Saturn</option>
+                <option value="uranus">Uranus</option>
+                <option value="neptune">Neptune</option>
+                <option value="moon">Moon</option>
+            </select>
         </div>
+
+        <div class="rhs">
+            <div id="weatherInfo">
+                <p id="temperature"></p>
+                <p id="atmosphere"></p>
+                <!-- Add more weather parameters as needed -->
+            </div>  
+        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
