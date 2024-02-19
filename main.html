@@ -9,8 +9,17 @@
 <body>
     <div class="flex-container" id="mainFlexContainer">
         <div class="lhs">
-            <h1>Change your location</h1>
-            <select id="celestialBody">
+            <h1 id="planetName" class="planet-name"></h1>
+            <div id="planetInfo" class="planet-info">
+                <div id="planetImageContainer"></div> <!-- Container for planet images -->
+                <div id="weatherInfo" class="weather-info">
+                    <p id="temperature"></p>
+                    <p id="atmosphere"></p>
+                    <!-- Add more weather parameters as needed -->
+                </div>
+            </div>
+            <h5>Choose a different location</h5>
+            <select id="celestialBody" class="celestial-body-select">
                 <option value="mercury">Mercury</option>
                 <option value="venus">Venus</option>
                 <option value="earth" selected>Earth</option>
@@ -21,16 +30,10 @@
                 <option value="neptune">Neptune</option>
                 <option value="moon">Moon</option>
             </select>
-            <p id="planetName"></p>
-            <div id="planetImageContainer"></div> <!-- Container for planet images -->
         </div>
 
         <div class="rhs default-style">
-            <div id="weatherInfo">
-                <p id="temperature"></p>
-                <p id="atmosphere"></p>
-                <!-- Add more weather parameters as needed -->
-            </div>  
+            <!-- Right-hand side content, if any -->
         </div>
         
     </div>
