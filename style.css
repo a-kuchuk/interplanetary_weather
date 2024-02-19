@@ -6,7 +6,7 @@ body {
 }
 
 .flex-container {
-    /* max-width: 400px; */
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -15,11 +15,29 @@ body {
     background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white container */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .landing-container {
     text-align: center;
+    flex-direction: column;
     margin-top: 100px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .lhs {
@@ -36,9 +54,19 @@ body {
     flex: 1;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white container */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.landing-background {
+    background-image: url('./backgrounds/photorealistic-galaxy-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensures the background covers the entire viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 .mercury-style {
