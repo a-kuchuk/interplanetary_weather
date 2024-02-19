@@ -6,7 +6,7 @@ body {
 }
 
 .flex-container {
-    max-width: 600px;
+    max-width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -142,12 +142,22 @@ p {
     margin: 10px 0;
 }
 
-#temperature {
-    font-weight: bold;
-    font-size: 24px;
-}
-
 #atmosphere {
+    font-style: italic;
+}
+#temperature {
+    font-style: italic;
+}
+#planetGravity {
+    font-style: italic;
+}
+#planetDayLength {
+    font-style: italic;
+}
+#planetLandscape {
+    font-style: italic;
+}
+#planetSeason {
     font-style: italic;
 }
 

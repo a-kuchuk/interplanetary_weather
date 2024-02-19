@@ -24,7 +24,7 @@ const planetData = {
         averageTemperature: -20,
         atmosphere: 'Virtually no atmosphere, some trace gases such as helium and argon',
         gravity: 1.622, // m/s^2
-        dayLength: '27.3 days (tidally locked with Earth)',
+        dayLength: 655.2,
         landscapeOverview: 'Barren surface with craters, mountains, and plains',
         seasonOverview: 'No seasons, but phases due to its orbit around Earth',
         image: './planets/moon.jpg'
@@ -95,6 +95,10 @@ const celestialBodySelect = document.getElementById('celestialBody');
 const temperatureElement = document.getElementById('temperature');
 const atmosphereElement = document.getElementById('atmosphere');
 const planetNameElement = document.getElementById('planetName');
+const planetGravityElement = document.getElementById('planetGravity');
+const planetDayLengthElement = document.getElementById('planetDayLength');
+const landscapeOverviewElement = document.getElementById('planetLandscape');
+const seasonOverviewElement = document.getElementById('planetSeason');
 const planetImageContainer = document.getElementById('planetImageContainer');
 const mainFlexContainer = document.getElementById('mainFlexContainer');
 
@@ -106,12 +110,16 @@ celestialBodySelect.addEventListener('change', () => {
         return;
     }
 
-    const { name, averageTemperature, atmosphere, image } = bodyInfo;
+    const { name, averageTemperature, atmosphere, gravity, dayLength, landscapeOverview, seasonOverview, image } = bodyInfo;
 
     // Update weather information
     temperatureElement.textContent = `Average Temperature: ${averageTemperature}°C`;
     atmosphereElement.textContent = `Atmosphere: ${atmosphere}`;
     planetNameElement.textContent = `Planet: ${name}`;
+    planetGravityElement.textContent = `Gravity: ${gravity} m/s^2`;
+    planetDayLengthElement.textContent = `Day Length: ${dayLength} hours`;
+    landscapeOverviewElement.textContent = `Landscape Overview: ${landscapeOverview}`;
+    seasonOverviewElement.textContent = `Season Overview: ${seasonOverview}`;
 
     // Update planet image
     const imagePath = `./${image}`; // Path to the image file
@@ -131,7 +139,7 @@ celestialBodySelect.addEventListener('change', () => {
     mainFlexContainer.classList.add(`${selectedBody}-style`);
 });
 
-
+// Function to redirect to another page
 function goToPage(page) {
     window.location.href = page;
 }
@@ -139,12 +147,16 @@ function goToPage(page) {
 window.onload = function() {
     const defaultSelectedBody = 'earth';
     const defaultBodyInfo = planetData[defaultSelectedBody];
-    const { name, averageTemperature, atmosphere, image } = defaultBodyInfo;
+    const { name, averageTemperature, atmosphere, gravity, dayLength, landscapeOverview, seasonOverview, image } = defaultBodyInfo;
 
     // Update weather information
     temperatureElement.textContent = `Average Temperature: ${averageTemperature}°C`;
     atmosphereElement.textContent = `Atmosphere: ${atmosphere}`;
     planetNameElement.textContent = `Planet: ${name}`;
+    planetGravityElement.textContent = `Gravity: ${gravity} m/s^2`;
+    planetDayLengthElement.textContent = `Day Length: ${dayLength} hours`;
+    landscapeOverviewElement.textContent = `Landscape Overview: ${landscapeOverview}`;
+    seasonOverviewElement.textContent = `Season Overview: ${seasonOverview}`;
 
     // Update planet image
     const imagePath = `./${image}`; // Path to the image file
