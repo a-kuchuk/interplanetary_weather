@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container" id="mainFlexContainer">
+        <div class="lhs">
+            <h1>Choose your location</h1>
+            <select id="celestialBody">
+                <option value="mercury">Mercury</option>
+                <option value="venus">Venus</option>
+                <option value="earth" selected>Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="saturn">Saturn</option>
+                <option value="uranus">Uranus</option>
+                <option value="neptune">Neptune</option>
+                <option value="moon">Moon</option>
+            </select>
+            <p id="planetName"></p>
+            <div id="planetImageContainer"></div> <!-- Container for planet images -->
+        </div>
+
+        <div class="rhs default-style">
+            <div id="weatherInfo">
+                <p id="temperature"></p>
+                <p id="atmosphere"></p>
+                <!-- Add more weather parameters as needed -->
+            </div>  
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

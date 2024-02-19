@@ -17,6 +17,11 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.landing-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
 .lhs {
     flex: 1;
     margin-right: 20px;
@@ -124,4 +129,19 @@ p {
 #planetImageContainer img {
     width: auto;
     height: 50px; /* Adjust the height as needed */
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

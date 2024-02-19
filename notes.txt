@@ -1,0 +1,10 @@
+TODO:
+- IMPORTANT: LANDING PAGE
+- reorder lhs so planet icon is bigger and chose new location is smaller
+- change background to general space theme
+- add planet specific landscape images
+- more inbuilt plaetary data:
+    - gravity? 
+    - day length
+    - season overview
+    - landscape overview?

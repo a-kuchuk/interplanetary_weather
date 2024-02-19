@@ -95,3 +95,30 @@ celestialBodySelect.addEventListener('change', () => {
     // Add class for the selected planet-specific style
     mainFlexContainer.classList.add(`${selectedBody}-style`);
 });
+
+
+function goToPage(page) {
+    window.location.href = page;
+}
+
+window.onload = function() {
+    const defaultSelectedBody = 'earth';
+    const defaultBodyInfo = planetData[defaultSelectedBody];
+    const { name, averageTemperature, atmosphere, image } = defaultBodyInfo;
+
+    // Update weather information
+    temperatureElement.textContent = `Average Temperature: ${averageTemperature}°C`;
+    atmosphereElement.textContent = `Atmosphere: ${atmosphere}`;
+    planetNameElement.textContent = `Planet: ${name}`;
+
+    // Update planet image
+    const imagePath = `./${image}`; // Path to the image file
+    const planetImage = document.createElement('img');
+    planetImage.src = imagePath;
+    planetImage.alt = `${name} Image`;
+    planetImageContainer.innerHTML = ''; // Clear previous image (if any)
+    planetImageContainer.appendChild(planetImage);
+
+    // Set default planet-specific style
+    mainFlexContainer.classList.add(`${defaultSelectedBody}-style`);
+};
